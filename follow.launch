@@ -1,0 +1,4 @@
+<launch>
+	<node name="follow_me" pkg="final_pkg" type="listener_scan.py" output="screen" />
+	<include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch" />
+</launch>
