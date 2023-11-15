@@ -1,0 +1,16 @@
+<launch>
+	<!-- Start the servo1 node -->
+	<group ns="servo1">
+		<param name="servo_pin" value="18" />
+		<node name="servo_control" pkg="final_pkg" type="servo_control.py" output="screen" />
+	</group>
+	<!-- Start the servo2 node -->
+	<group ns="servo2">
+		<param name="servo_pin" value="13" />
+		<node name="servo_control" pkg="final_pkg" type="servo_control.py" output="screen" />
+	</group>
+
+	<node name="camera" pkg="final_pkg" type="camera.py" output="screen" />
+
+	<include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch" />
+</launch>
