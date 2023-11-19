@@ -6,7 +6,7 @@
 	</group>
 	<!-- Start the servo2 node -->
 	<group ns="servo2">
-		<param name="servo_pin" value="13" />
+		<param name="servo_pin" value="12" />
 		<node name="servo_control" pkg="final_pkg" type="servo_control.py" output="screen" />
 	</group>
 

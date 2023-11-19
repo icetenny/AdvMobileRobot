@@ -61,11 +61,6 @@ class Turtle():
         print(self.cmd_angle)
 
 
-        
-
-
-
-
 def main():
     rospy.init_node('listener_scan', anonymous=True)
     np.set_printoptions(suppress=True)
