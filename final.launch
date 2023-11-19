@@ -11,6 +11,7 @@
 	</group>
 
 	<node name="camera" pkg="final_pkg" type="camera.py" output="screen" />
+	<node name="simple_goal_transfer" pkg="final_pkg" type="simple_goal_transfer.py"/>
 
 	<include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch" />
 </launch>
